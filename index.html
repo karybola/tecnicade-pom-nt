@@ -1,228 +1,228 @@
-!-- 
+<!-- 
   Documento Pomodoro Galáctico para Neptur
   Creado por el Comando Neptur.
-  Versión 1.0
-  Objetivo Explicar la Técnica Pomodoro con una temática espacial y motivadora.
---
+  Versión: 1.0
+  Objetivo: Explicar la Técnica Pomodoro con una temática espacial y motivadora.
+-->
 
-style
-   --- ESTILOS GLOBALES Y TEMÁTICA --- 
+<style>
+  /* --- ESTILOS GLOBALES Y TEMÁTICA --- */
   .neptur-pomodoro-container {
-    font-family -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color #0c0a1f;  Azul oscuro del cosmos 
-    color #e0e5ff;  Color de nebulosa suave para el texto 
-    max-width 800px;
-    margin auto;
-    padding 2rem;
-    border-radius 15px;
-    border 1px solid #3a3f7c;
-    box-shadow 0 0 30px rgba(76, 89, 255, 0.3);
-    animation fadeInDocument 1s ease-in-out;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0c0a1f; /* Azul oscuro del cosmos */
+    color: #e0e5ff; /* Color de nebulosa suave para el texto */
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #3a3f7c;
+    box-shadow: 0 0 30px rgba(76, 89, 255, 0.3);
+    animation: fadeInDocument 1s ease-in-out;
   }
 
   @keyframes fadeInDocument {
     from {
-      opacity 0;
-      transform translateY(20px);
+      opacity: 0;
+      transform: translateY(20px);
     }
     to {
-      opacity 1;
-      transform translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
-   --- ENCABEZADOS Y TEXTO --- 
+  /* --- ENCABEZADOS Y TEXTO --- */
   .neptur-header {
-    text-align center;
-    border-bottom 2px solid #4a4e91;
-    padding-bottom 1rem;
-    margin-bottom 2rem;
+    text-align: center;
+    border-bottom: 2px solid #4a4e91;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .neptur-logo {
-    font-size 2.5rem;
-    font-weight bold;
-    color #ffffff;
-    text-shadow 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #ff00c8;
-    animation pulseGlow 4s infinite ease-in-out;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #ff00c8;
+    animation: pulseGlow 4s infinite ease-in-out;
   }
 
   @keyframes pulseGlow {
     0%, 100% {
-      text-shadow 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #ff00c8;
+      text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #ff00c8;
     }
     50% {
-      text-shadow 0 0 15px #00d4ff, 0 0 25px #00d4ff, 0 0 40px #ff00c8, 0 0 5px #fff;
+      text-shadow: 0 0 15px #00d4ff, 0 0 25px #00d4ff, 0 0 40px #ff00c8, 0 0 5px #fff;
     }
   }
 
   h2 {
-    font-size 2rem;
-    color #90a0ff;
-    margin-top 2.5rem;
-    margin-bottom 1rem;
-    display flex;
-    align-items center;
-    gap 0.75rem;
+    font-size: 2rem;
+    color: #90a0ff;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
   }
 
   p, li {
-    line-height 1.7;
-    font-size 1.1rem;
-    color #c0c8ff;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #c0c8ff;
   }
 
   strong {
-    color #82ffff;  Cian brillante 
+    color: #82ffff; /* Cian brillante */
   }
 
-   --- TARJETAS Y SECCIONES VISUALES --- 
+  /* --- TARJETAS Y SECCIONES VISUALES --- */
   .info-card {
-    background linear-gradient(145deg, #1a183e, #110f2d);
-    border 1px solid #3a3f7c;
-    border-radius 12px;
-    padding 1.5rem;
-    margin-bottom 1.5rem;
-    transition transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #1a183e, #110f2d);
+    border: 1px solid #3a3f7c;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .info-cardhover {
-    transform translateY(-5px);
-    box-shadow 0 8px 25px rgba(0, 212, 255, 0.2);
+  .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
   }
 
   .step-list {
-    list-style none;
-    padding-left 0;
+    list-style: none;
+    padding-left: 0;
   }
 
   .step-list li {
-    background-color rgba(42, 40, 80, 0.5);
-    padding 1rem;
-    margin-bottom 0.75rem;
-    border-left 4px solid #ff00c8;  Magenta neón 
-    border-radius 0 8px 8px 0;
-    transition background-color 0.3s;
+    background-color: rgba(42, 40, 80, 0.5);
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid #ff00c8; /* Magenta neón */
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s;
   }
   
-  .step-list libefore {
-    content '🚀';
-    margin-right 1rem;
-    font-size 1.2rem;
+  .step-list li::before {
+    content: '🚀';
+    margin-right: 1rem;
+    font-size: 1.2rem;
   }
 
-  .step-list lihover {
-    background-color rgba(60, 58, 110, 0.7);
+  .step-list li:hover {
+    background-color: rgba(60, 58, 110, 0.7);
   }
 
-   --- BOTONES Y ELEMENTOS INTERACTIVOS (VISUALES) --- 
+  /* --- BOTONES Y ELEMENTOS INTERACTIVOS (VISUALES) --- */
   .action-button {
-    display inline-block;
-    background linear-gradient(45deg, #00d4ff, #ff00c8);
-    color #ffffff;
-    text-decoration none;
-    padding 15px 30px;
-    border-radius 50px;
-    font-weight bold;
-    font-size 1.2rem;
-    text-align center;
-    margin-top 1.5rem;
-    border none;
-    cursor pointer;
-    box-shadow 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    background: linear-gradient(45deg, #00d4ff, #ff00c8);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
   }
 
-  .action-buttonhover {
-    transform scale(1.05);
-    box-shadow 0 0 20px #ff00c8, 0 0 20px #00d4ff;
+  .action-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00c8, 0 0 20px #00d4ff;
   }
 
-   --- SECCIÓN DE CRÉDITOS --- 
+  /* --- SECCIÓN DE CRÉDITOS --- */
   .neptur-footer {
-    text-align center;
-    margin-top 3rem;
-    padding-top 1.5rem;
-    border-top 1px solid #3a3f7c;
-    font-size 0.9rem;
-    color #8088cc;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #3a3f7c;
+    font-size: 0.9rem;
+    color: #8088cc;
   }
-style
+</style>
 
-div class=neptur-pomodoro-container
+<div class="neptur-pomodoro-container">
   
-  !-- Encabezado con Logo Ficticio --
-  header class=neptur-header
-    div class=neptur-logoN E P T U Rdiv
-    pProtocolo de Enfoque Avanzadop
-  header
+  <!-- Encabezado con Logo Ficticio -->
+  <header class="neptur-header">
+    <div class="neptur-logo">N E P T U R</div>
+    <p>Protocolo de Enfoque Avanzado</p>
+  </header>
 
-  !-- Sección ¿Qué es la Técnica Pomodoro --
-  section
-    h2🌌 ¿Qué es la Técnica Pomodoroh2
-    div class=info-card
-      p¡Saludos, cadete estelar! La Técnica Pomodoro es tu mapa de navegación para conquistar el universo del conocimiento. Imagina que tu tiempo de estudio son strongórbitas de concentraciónstrong. En lugar de vagar sin rumbo por el cosmos, te enfocas en una sola tarea durante un ciclo de 25 minutos, una órbita.p
-      pAl final de cada órbita, realizas un strongsalto a una nebulosa de descansostrong de 5 minutos. Esta técnica transforma el tiempo de un agujero negro a tu mejor aliado, permitiéndote mantener la energía y la concentración al máximo nivel.p
-    div
-  section
+  <!-- Sección: ¿Qué es la Técnica Pomodoro? -->
+  <section>
+    <h2>🌌 ¿Qué es la Técnica Pomodoro?</h2>
+    <div class="info-card">
+      <p>¡Saludos, cadete estelar! La Técnica Pomodoro es tu mapa de navegación para conquistar el universo del conocimiento. Imagina que tu tiempo de estudio son <strong>órbitas de concentración</strong>. En lugar de vagar sin rumbo por el cosmos, te enfocas en una sola tarea durante un ciclo de 25 minutos, una "órbita".</p>
+      <p>Al final de cada órbita, realizas un <strong>salto a una nebulosa de descanso</strong> de 5 minutos. Esta técnica transforma el tiempo de un agujero negro a tu mejor aliado, permitiéndote mantener la energía y la concentración al máximo nivel.</p>
+    </div>
+  </section>
 
-  !-- Sección Beneficios Científicos --
-  section
-    h2🧠 Beneficios Comprobados por la Cienciah2
-    div class=info-card
-      ul
-        listrongCombate la fatiga mentalstrong Los descansos frecuentes evitan el agotamiento del córtex prefrontal, el centro de mando de tu cerebro. em(Referencia Tice & Baumeister, 1997)emli
-        listrongMejora la consolidación de la memoriastrong Las pausas ayudan a tu cerebro a procesar y almacenar lo que acabas de aprender, como si guardaras datos en la computadora de la nave.li
-        listrongReduce las distraccionesstrong Al comprometerte a una órbita corta, es más fácil posponer los asteroides de distracción (notificaciones, redes sociales) hasta tu próximo descanso.li
-      ul
-    div
-  section
+  <!-- Sección: Beneficios Científicos -->
+  <section>
+    <h2>🧠 Beneficios Comprobados por la Ciencia</h2>
+    <div class="info-card">
+      <ul>
+        <li><strong>Combate la fatiga mental:</strong> Los descansos frecuentes evitan el agotamiento del córtex prefrontal, el centro de mando de tu cerebro. <em>(Referencia: Tice & Baumeister, 1997)</em></li>
+        <li><strong>Mejora la consolidación de la memoria:</strong> Las pausas ayudan a tu cerebro a procesar y almacenar lo que acabas de aprender, como si guardaras datos en la computadora de la nave.</li>
+        <li><strong>Reduce las distracciones:</strong> Al comprometerte a una órbita corta, es más fácil posponer los "asteroides de distracción" (notificaciones, redes sociales) hasta tu próximo descanso.</li>
+      </ul>
+    </div>
+  </section>
 
-  !-- Sección Cómo Aplicarla --
-  section
-    h2🛰️ Tu Misión Pomodoro Protocolo de 5 Pasosh2
-    ol class=step-list
-      listrongElige tu misiónstrong Define una tarea clara y única que quieras completar.li
-      listrongActiva el cronómetro orbitalstrong Inicia un temporizador de 25 minutos. ¡Es hora de entrar en el stronghipermodo de enfoquestrong!li
-      listrongTrabaja en tu órbitastrong Concéntrate exclusivamente en tu misión. Si un asteroide de distracción aparece, anótalo y vuelve a tu tarea.li
-      listrongCompleta la órbitastrong Cuando suene la alarma, ¡felicidades! Has completado una órbita. Marca tu progreso.li
-      listrongSalto a la nebulosa de descansostrong Tómate un descanso de 5 minutos. ¡Aléjate de la pantalla, estírate, mira por la ventana de tu nave!li
-    ol
-    p style=margin-top 1rem;Después de 4 órbitas, toma un descanso más largo (15-30 minutos) para recargar los escudos de energía.p
-  section
+  <!-- Sección: Cómo Aplicarla -->
+  <section>
+    <h2>🛰️ Tu Misión Pomodoro: Protocolo de 5 Pasos</h2>
+    <ol class="step-list">
+      <li><strong>Elige tu misión:</strong> Define una tarea clara y única que quieras completar.</li>
+      <li><strong>Activa el cronómetro orbital:</strong> Inicia un temporizador de 25 minutos. ¡Es hora de entrar en el <strong>hipermodo de enfoque</strong>!</li>
+      <li><strong>Trabaja en tu órbita:</strong> Concéntrate exclusivamente en tu misión. Si un asteroide de distracción aparece, anótalo y vuelve a tu tarea.</li>
+      <li><strong>Completa la órbita:</strong> Cuando suene la alarma, ¡felicidades! Has completado una órbita. Marca tu progreso.</li>
+      <li><strong>Salto a la nebulosa de descanso:</strong> Tómate un descanso de 5 minutos. ¡Aléjate de la pantalla, estírate, mira por la ventana de tu nave!</li>
+    </ol>
+    <p style="margin-top: 1rem;">Después de 4 órbitas, toma un descanso más largo (15-30 minutos) para recargar los escudos de energía.</p>
+  </section>
 
-  !-- Sección Errores Comunes --
-  section
-    h2☄️ Evitando Agujeros Negros Errores Comunesh2
-    div class=info-card
-      ul
-        listrongSaltarse los descansosstrong ¡No lo hagas! Son cruciales para recargar tu energía mental. Un motor sin enfriamiento se sobrecalienta.li
-        listrongÓrbitas interrumpidasstrong Si te interrumpen, la órbita no cuenta. Reinicia el cronómetro. El objetivo es el enfoque ininterrumpido.li
-        listrongMisiones demasiado grandesstrong Si una tarea es más grande que una órbita de 25 minutos, divídela en misiones más pequeñas y manejables.li
-      ul
-    div
-  section
+  <!-- Sección: Errores Comunes -->
+  <section>
+    <h2>☄️ Evitando Agujeros Negros: Errores Comunes</h2>
+    <div class="info-card">
+      <ul>
+        <li><strong>Saltarse los descansos:</strong> ¡No lo hagas! Son cruciales para recargar tu energía mental. Un motor sin enfriamiento se sobrecalienta.</li>
+        <li><strong>Órbitas interrumpidas:</strong> Si te interrumpen, la órbita no cuenta. Reinicia el cronómetro. El objetivo es el enfoque ininterrumpido.</li>
+        <li><strong>Misiones demasiado grandes:</strong> Si una tarea es más grande que una órbita de 25 minutos, divídela en misiones más pequeñas y manejables.</li>
+      </ul>
+    </div>
+  </section>
 
-  !-- Sección Modo Neptur --
-  section
-    h2✨ Modo Neptur Pomodoro Galácticoh2
-    div class=info-card
-      pEn Neptur, cada órbita de concentración te recompensa. ¡Así es como potencias tu viaje!p
-      ul
-        listrongGana XP de Concentraciónstrong Cada Pomodoro completado te otorga puntos de experiencia (XP) que te ayudan a subir de nivel.li
-        listrongConsigue Gemas Cósmicasstrong Completa rachas de Pomodoros para ganar gemas y desbloquear contenido exclusivo en tu pase de batalla.li
-        listrongMisiones Diariasstrong Cumple misiones como Completa 3 órbitas de matemáticas para obtener bonificaciones especiales.li
-      ul
-      div style=text-align center;
-        a href=# class=action-button🚀 Iniciar Misión Pomodoroa
-      div
-    div
-  section
+  <!-- Sección: Modo Neptur -->
+  <section>
+    <h2>✨ Modo Neptur: Pomodoro Galáctico</h2>
+    <div class="info-card">
+      <p>En Neptur, cada órbita de concentración te recompensa. ¡Así es como potencias tu viaje!</p>
+      <ul>
+        <li><strong>Gana XP de Concentración:</strong> Cada Pomodoro completado te otorga puntos de experiencia (XP) que te ayudan a subir de nivel.</li>
+        <li><strong>Consigue Gemas Cósmicas:</strong> Completa rachas de Pomodoros para ganar gemas y desbloquear contenido exclusivo en tu pase de batalla.</li>
+        <li><strong>Misiones Diarias:</strong> Cumple misiones como "Completa 3 órbitas de matemáticas" para obtener bonificaciones especiales.</li>
+      </ul>
+      <div style="text-align: center;">
+        <a href="#" class="action-button">🚀 Iniciar Misión Pomodoro</a>
+      </div>
+    </div>
+  </section>
 
-  !-- Footer --
-  footer class=neptur-footer
-    pCreado por el Comando Neptur. Todos los derechos reservados © 2025.p
-    pemVersión galáctica del protocolo Pomodoro, adaptada para estudiantes del universo Neptur.emp
-  footer
+  <!-- Footer -->
+  <footer class="neptur-footer">
+    <p>Creado por el Comando Neptur. Todos los derechos reservados © 2025.</p>
+    <p><em>Versión galáctica del protocolo Pomodoro, adaptada para estudiantes del universo Neptur.</em></p>
+  </footer>
 
-div
+</div>
